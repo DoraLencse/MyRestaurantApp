@@ -32,7 +32,7 @@ function onStateChange(from) {
   }
 }
 
-/* // Check if service worker is supported in the browser
+// Check if service worker is supported in the browser
 if (navigator.serviceWorker) {
     navigator.serviceWorker.register('/sw.js')
         .then(registration => {
@@ -46,4 +46,4 @@ navigator.serviceWorker.getRegistrations().then(registrations => {
     for (let registration of registrations) {
         registration.unregister();
     }
-}) */
+})
