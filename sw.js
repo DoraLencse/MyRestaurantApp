@@ -64,17 +64,3 @@ self.addEventListener('fetch', event => {
     .catch(err => console.log(err, event.request))
   );
 });
-
-/*
-// Cache falling back to the network: https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker#cachefallback
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    // Try the cache
-    caches.match(event.request).then(response => {
-      if (response) {
-        return response;
-      }
-    })
-  );
-});
-*/
