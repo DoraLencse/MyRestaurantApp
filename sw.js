@@ -33,6 +33,7 @@ self.addEventListener('install', event => {
 		  'img/9.jpg',
 		  'img/10.jpg',
 		  'offline/offline.html',
+		  'offline/404.html',
         ]).catch(error => {
         console.log('Caches opening failed: ' + error);
       });
